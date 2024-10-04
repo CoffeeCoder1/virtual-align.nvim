@@ -20,4 +20,4 @@ let g:loaded_virtualalign = 1
 command! -range=% -nargs=1 VirtualAlign lua require("virtual-align").align(<f-args>)
 command! -range=% -nargs=0 VirtualAlignAllTest lua require("virtual-align").align_all_test(<f-args>)
 command! -nargs=0 VirtualAlignAll lua require("virtual-align").align_all_auto(0, vim.api.nvim_buf_line_count(0))
-command! -nargs=0 VirtualAlignEnable lua require("virtual-align").enable()
+command! -nargs=0 VirtualAlignEnable lua require("virtual-align").setup()
