@@ -12,7 +12,7 @@ endif
 " variable exists, do nothing more. Otherwise, assign the loaded
 " variable and continue running this instance of the plugin.
 if exists("g:loaded_virtualalign")
-    finish
+	finish
 endif
 let g:loaded_virtualalign = 1
 
